@@ -12,7 +12,7 @@ public class Parcial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar información al usuario
+       
         System.out.print("Nombre: ");
         String nombre = scanner.nextLine();
 
@@ -27,7 +27,7 @@ public class Parcial {
 
         System.out.print("Edad: ");
         int edad = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea
+        scanner.nextLine(); 
 
         System.out.print("Email: ");
         String email = scanner.nextLine();
@@ -39,19 +39,19 @@ public class Parcial {
         double salario = scanner.nextDouble();
 
         System.out.print("Jefe Inmediato: ");
-        scanner.nextLine(); // Consumir el salto de línea
+        scanner.nextLine(); 
         String jefeInmediato = scanner.nextLine();
 
         System.out.print("Años de Experiencia: ");
         int aniosExperiencia = scanner.nextInt();
 
-        // Crear el objeto Empleado
+      
         Empleado empleado = new Empleado(nombre, apellido, direccion, telefono, edad, email, nombreCargo, salario, jefeInmediato, aniosExperiencia);
 
-        // Mostrar la información del empleado
+        
         empleado.mostrarInformacion();
 
-        // Cerrar el scanner
+       
         scanner.close();
     }
   }
