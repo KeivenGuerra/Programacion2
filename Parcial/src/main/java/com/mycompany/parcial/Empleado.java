@@ -15,7 +15,6 @@ public class Empleado extends Persona {
     private int aniosExperiencia;     
     private String cargo;            
 
-    // Constructor
     public Empleado(String nombre, String apellido, String direccion, String telefono, int edad, String email, 
                     String nombreCargo, double salario, String jefeInmediato, int aniosExperiencia) {
         super(nombre, apellido, direccion, telefono, edad, email);
@@ -26,7 +25,7 @@ public class Empleado extends Persona {
         this.cargo = calcularCargo(); // Calcular el cargo al crear el objeto
     }
 
-    // Getters y Setters
+   
     public String getNombreCargo() {
         return nombreCargo;
     }
@@ -41,7 +40,7 @@ public class Empleado extends Persona {
 
     public void setSalario(double salario) {
         this.salario = salario;
-        this.cargo = calcularCargo(); // Recalcular el cargo si el salario cambia
+        this.cargo = calcularCargo(); 
     }
 
     public String getJefeInmediato() {
@@ -61,9 +60,9 @@ public class Empleado extends Persona {
         this.cargo = calcularCargo(); // Recalcular el cargo si los años de experiencia cambian
     }
 
-    // Método para calcular el cargo
+   
     private String calcularCargo() {
-        int edad = getEdad(); // Obtener la edad de la clase base
+        int edad = getEdad(); 
 
         if (salario >= 5000000 && aniosExperiencia >= 5 && edad >= 25 && edad <= 45) {
             return "Senior";
@@ -74,14 +73,14 @@ public class Empleado extends Persona {
         }
     }
 
-    // Método para mostrar la información del empleado
+    
     @Override
     public void mostrarInformacion() {
-        super.mostrarInformacion(); // Mostrar información de la clase base (Persona)
+        super.mostrarInformacion(); 
         System.out.println("Nombre del Cargo: " + nombreCargo);
         System.out.println("Salario: $" + salario);
         System.out.println("Jefe Inmediato: " + jefeInmediato);
         System.out.println("Años de Experiencia: " + aniosExperiencia);
-        System.out.println("Cargo Calculado: " + cargo); // Mostrar el cargo calculado
+        System.out.println("Cargo Calculado: " + cargo); 
     }
 }
