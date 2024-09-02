@@ -22,7 +22,7 @@ public class Empleado extends Persona {
         this.salario = salario;
         this.jefeInmediato = jefeInmediato;
         this.aniosExperiencia = aniosExperiencia;
-        this.cargo = calcularCargo(); // Calcular el cargo al crear el objeto
+        this.cargo = calcularCargo(); 
     }
 
    
@@ -57,7 +57,7 @@ public class Empleado extends Persona {
 
     public void setAniosExperiencia(int aniosExperiencia) {
         this.aniosExperiencia = aniosExperiencia;
-        this.cargo = calcularCargo(); // Recalcular el cargo si los años de experiencia cambian
+        this.cargo = calcularCargo(); 
     }
 
    
