@@ -16,7 +16,7 @@ public class Persona {
     private int edad;
     private String email;
 
-    // Constructor
+  
     public Persona(String nombre, String apellido, String direccion, String telefono, int edad, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -26,7 +26,7 @@ public class Persona {
         this.email = email;
     }
 
-    // Getters y Setters
+  
     public String getNombre() {
         return nombre;
     }
@@ -75,7 +75,7 @@ public class Persona {
         this.email = email;
     }
 
-    // Método para mostrar información
+   
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
